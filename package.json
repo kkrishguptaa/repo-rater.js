@@ -10,7 +10,7 @@
     "build": "tsc",
     "lint": "echo \"No linting configured\"",
     "test": "echo \"No tests configured\"",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^20.10.7",
