@@ -45,7 +45,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install Dependencies
         run: yarn --frozen-lockfile
-      - name: Lint ${{ env.PKG_NAME }}
+      - name: Build ${{ env.PKG_NAME }}
         run: yarn build
 
   test:
@@ -183,28 +183,3 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-  publish-gpr:
-    name: Publish Package [GPR]
-    needs: changelog
-    if: github.event_name != 'pull_request' && needs.changelog.outputs.skipped == 'false'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          registry-url: https://npm.pkg.github.com/
-          scope: '@xkrishguptaa'
-
-      - name: Install Dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Publish Package
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_OWNER_TOKEN }}
