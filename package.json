@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API Wrapper to interact with the RepoRater API 🪅",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/github:xkrishguptaa/repo-rater.js.git"
