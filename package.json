@@ -1,6 +1,6 @@
 {
   "name": "repo-rater.js",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "API Wrapper to interact with the RepoRater API 🪅",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
