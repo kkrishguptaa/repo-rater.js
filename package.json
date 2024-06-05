@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "tsc": "2.0.4",
     "typescript": "5.4.5"
   }
