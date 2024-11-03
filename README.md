@@ -1,3 +1,5 @@
+> Sunsetted in liue of the deprecation of RepoRater itself.
+
 <div align="center">
 <img height="150" width="150" src="https://github.com/EddieHubCommunity/RepoRater/raw/ee5f3e61ec1bd7676f02af93d4f3d0e3e3122c57/public/reporater-logo.png" />
 <h1>repo-rater.js</h1>
